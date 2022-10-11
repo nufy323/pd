@@ -39,11 +39,11 @@ import (
 
 	"github.com/BurntSushi/toml"
 	"github.com/coreos/go-semver/semver"
+	"github.com/ozonru/etcd/v3/embed"
+	"github.com/ozonru/etcd/v3/pkg/transport"
 	"github.com/pingcap/errors"
 	"github.com/pingcap/kvproto/pkg/metapb"
 	"github.com/pingcap/log"
-	"go.etcd.io/etcd/embed"
-	"go.etcd.io/etcd/pkg/transport"
 	"go.uber.org/zap"
 	"go.uber.org/zap/zapcore"
 )

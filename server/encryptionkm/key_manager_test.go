@@ -26,6 +26,8 @@ import (
 	"time"
 
 	"github.com/gogo/protobuf/proto"
+	"github.com/ozonru/etcd/v3/clientv3"
+	"github.com/ozonru/etcd/v3/embed"
 	"github.com/pingcap/kvproto/pkg/encryptionpb"
 	"github.com/stretchr/testify/require"
 	"github.com/tikv/pd/pkg/encryption"
@@ -33,8 +35,6 @@ import (
 	"github.com/tikv/pd/pkg/tempurl"
 	"github.com/tikv/pd/pkg/typeutil"
 	"github.com/tikv/pd/server/election"
-	"go.etcd.io/etcd/clientv3"
-	"go.etcd.io/etcd/embed"
 )
 
 const (

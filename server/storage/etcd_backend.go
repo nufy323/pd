@@ -15,9 +15,9 @@
 package storage
 
 import (
+	"github.com/ozonru/etcd/v3/clientv3"
 	"github.com/tikv/pd/server/storage/endpoint"
 	"github.com/tikv/pd/server/storage/kv"
-	"go.etcd.io/etcd/clientv3"
 )
 
 // etcdBackend is a storage backend that stores data in etcd,

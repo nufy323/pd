@@ -20,6 +20,7 @@ import (
 	"strings"
 	"time"
 
+	"github.com/ozonru/etcd/v3/clientv3"
 	"github.com/pingcap/errors"
 	"github.com/pingcap/log"
 	promClient "github.com/prometheus/client_golang/api"
@@ -29,7 +30,6 @@ import (
 	"github.com/tikv/pd/server/config"
 	"github.com/tikv/pd/server/core"
 	"github.com/tikv/pd/server/schedule/filter"
-	"go.etcd.io/etcd/clientv3"
 	"go.uber.org/zap"
 )
 

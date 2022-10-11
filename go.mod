@@ -14,14 +14,16 @@ require (
 	github.com/gin-gonic/gin v1.7.4
 	github.com/go-echarts/go-echarts v1.0.0
 	github.com/gogo/protobuf v1.3.2
-	github.com/golang/protobuf v1.5.0
+	github.com/golang/protobuf v1.5.2
 	github.com/google/btree v1.0.0
 	github.com/gorilla/mux v1.7.4
+	github.com/gorilla/websocket v1.4.2 // indirect
 	github.com/grpc-ecosystem/go-grpc-prometheus v1.2.0
 	github.com/joho/godotenv v1.4.0
 	github.com/mattn/go-shellwords v1.0.12
 	github.com/mgechev/revive v1.0.2
 	github.com/montanaflynn/stats v0.5.0
+	github.com/ozonru/etcd/v3 v3.3.0-rc.0-grpc1.30.0
 	github.com/petermattis/goid v0.0.0-20211229010228-4d14c490ee36 // indirect
 	github.com/phf/go-queue v0.0.0-20170504031614-9abe38d0371d
 	github.com/pingcap/errcode v0.3.0
@@ -41,14 +43,18 @@ require (
 	github.com/swaggo/swag v1.8.3
 	github.com/syndtr/goleveldb v1.0.1-0.20190318030020-c3a204f8e965
 	github.com/tidwall/gjson v1.9.3 // indirect
+	github.com/tmc/grpc-websocket-proxy v0.0.0-20200427203606-3cfed13b9966 // indirect
 	github.com/unrolled/render v1.0.1
 	github.com/urfave/negroni v0.3.0
-	go.etcd.io/etcd v0.5.0-alpha.5.0.20220712081845-4636a5fab43f
+	go.etcd.io/bbolt v1.3.6 // indirect
 	go.uber.org/goleak v1.1.12
 	go.uber.org/zap v1.19.1
+	golang.org/x/crypto v0.0.0-20220411220226-7b82a4e95df4 // indirect
 	golang.org/x/text v0.3.7
 	golang.org/x/time v0.0.0-20220224211638-0e9765cccd65
 	golang.org/x/tools v0.1.10
-	google.golang.org/grpc v1.26.0
+	google.golang.org/grpc v1.36.0
 	gotest.tools/gotestsum v1.7.0
 )
+
+replace github.com/pingcap/tidb-dashboard => github.com/nufy323/tidb-dashboard v1.0.0

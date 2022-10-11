@@ -21,11 +21,11 @@ import (
 	"strings"
 	"time"
 
+	"github.com/ozonru/etcd/v3/clientv3"
 	"github.com/pingcap/errors"
 	"github.com/pingcap/failpoint"
 	"github.com/pingcap/log"
 	"github.com/tikv/pd/pkg/errs"
-	"go.etcd.io/etcd/clientv3"
 	"go.uber.org/zap"
 )
 

@@ -22,10 +22,10 @@ import (
 	"testing"
 	"time"
 
+	"github.com/ozonru/etcd/v3/clientv3"
 	"github.com/stretchr/testify/require"
 	"github.com/tikv/pd/tests"
 	"github.com/tikv/pd/tools/pd-backup/pdbackup"
-	"go.etcd.io/etcd/clientv3"
 )
 
 func TestBackup(t *testing.T) {

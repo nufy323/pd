@@ -20,9 +20,9 @@ import (
 	"crypto/x509"
 	"net/url"
 
+	"github.com/ozonru/etcd/v3/pkg/transport"
 	"github.com/pingcap/log"
 	"github.com/tikv/pd/pkg/errs"
-	"go.etcd.io/etcd/pkg/transport"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials"
 	"google.golang.org/grpc/metadata"

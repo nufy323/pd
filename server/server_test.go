@@ -21,14 +21,14 @@ import (
 	"net/http"
 	"testing"
 
+	"github.com/ozonru/etcd/v3/embed"
+	"github.com/ozonru/etcd/v3/pkg/types"
 	"github.com/stretchr/testify/suite"
 	"github.com/tikv/pd/pkg/apiutil"
 	"github.com/tikv/pd/pkg/assertutil"
 	"github.com/tikv/pd/pkg/etcdutil"
 	"github.com/tikv/pd/pkg/testutil"
 	"github.com/tikv/pd/server/config"
-	"go.etcd.io/etcd/embed"
-	"go.etcd.io/etcd/pkg/types"
 	"go.uber.org/goleak"
 )
 

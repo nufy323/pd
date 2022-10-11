@@ -21,9 +21,9 @@ import (
 	"log"
 	"time"
 
+	"github.com/ozonru/etcd/v3/pkg/report"
 	"github.com/pingcap/kvproto/pkg/metapb"
 	"github.com/pingcap/kvproto/pkg/pdpb"
-	"go.etcd.io/etcd/pkg/report"
 	"google.golang.org/grpc"
 )
 

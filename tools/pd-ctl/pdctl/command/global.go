@@ -23,10 +23,10 @@ import (
 	"os"
 	"strings"
 
+	"github.com/ozonru/etcd/v3/pkg/transport"
 	"github.com/pingcap/errors"
 	"github.com/spf13/cobra"
 	"github.com/tikv/pd/pkg/apiutil"
-	"go.etcd.io/etcd/pkg/transport"
 )
 
 var (

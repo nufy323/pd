@@ -17,7 +17,7 @@ package endpoint
 import (
 	"strings"
 
-	"go.etcd.io/etcd/clientv3"
+	"github.com/ozonru/etcd/v3/clientv3"
 )
 
 // RuleStorage defines the storage operations on the rule.

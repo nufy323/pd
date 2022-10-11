@@ -25,12 +25,12 @@ import (
 	"testing"
 	"time"
 
+	"github.com/ozonru/etcd/v3/clientv3"
 	"github.com/pingcap/failpoint"
 	"github.com/pingcap/kvproto/pkg/metapb"
 	"github.com/stretchr/testify/require"
 	"github.com/tikv/pd/server/core"
 	"github.com/tikv/pd/server/storage/endpoint"
-	"go.etcd.io/etcd/clientv3"
 )
 
 func TestBasic(t *testing.T) {

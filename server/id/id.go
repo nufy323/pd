@@ -17,6 +17,7 @@ package id
 import (
 	"path"
 
+	"github.com/ozonru/etcd/v3/clientv3"
 	"github.com/pingcap/log"
 	"github.com/prometheus/client_golang/prometheus"
 	"github.com/tikv/pd/pkg/errs"
@@ -24,7 +25,6 @@ import (
 	"github.com/tikv/pd/pkg/syncutil"
 	"github.com/tikv/pd/pkg/typeutil"
 	"github.com/tikv/pd/server/storage/kv"
-	"go.etcd.io/etcd/clientv3"
 	"go.uber.org/zap"
 )
 

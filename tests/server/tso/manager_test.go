@@ -23,6 +23,7 @@ import (
 	"testing"
 	"time"
 
+	"github.com/ozonru/etcd/v3/clientv3"
 	"github.com/pingcap/failpoint"
 	"github.com/stretchr/testify/require"
 	"github.com/tikv/pd/pkg/etcdutil"
@@ -30,7 +31,6 @@ import (
 	"github.com/tikv/pd/server/config"
 	"github.com/tikv/pd/server/tso"
 	"github.com/tikv/pd/tests"
-	"go.etcd.io/etcd/clientv3"
 )
 
 // TestClusterDCLocations will write different dc-locations to each server

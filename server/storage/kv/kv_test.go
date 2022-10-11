@@ -22,10 +22,10 @@ import (
 	"strconv"
 	"testing"
 
+	"github.com/ozonru/etcd/v3/clientv3"
+	"github.com/ozonru/etcd/v3/embed"
 	"github.com/stretchr/testify/require"
 	"github.com/tikv/pd/pkg/tempurl"
-	"go.etcd.io/etcd/clientv3"
-	"go.etcd.io/etcd/embed"
 )
 
 func TestEtcd(t *testing.T) {

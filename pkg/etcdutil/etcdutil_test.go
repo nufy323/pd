@@ -21,10 +21,10 @@ import (
 	"testing"
 	"time"
 
+	"github.com/ozonru/etcd/v3/clientv3"
+	"github.com/ozonru/etcd/v3/embed"
+	"github.com/ozonru/etcd/v3/pkg/types"
 	"github.com/stretchr/testify/require"
-	"go.etcd.io/etcd/clientv3"
-	"go.etcd.io/etcd/embed"
-	"go.etcd.io/etcd/pkg/types"
 )
 
 func TestMemberHelpers(t *testing.T) {

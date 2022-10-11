@@ -32,6 +32,9 @@ import (
 	"github.com/coreos/go-semver/semver"
 	"github.com/golang/protobuf/proto" //nolint:staticcheck
 	"github.com/gorilla/mux"
+	"github.com/ozonru/etcd/v3/clientv3"
+	"github.com/ozonru/etcd/v3/embed"
+	"github.com/ozonru/etcd/v3/pkg/types"
 	"github.com/pingcap/errors"
 	"github.com/pingcap/failpoint"
 	"github.com/pingcap/kvproto/pkg/diagnosticspb"
@@ -66,9 +69,6 @@ import (
 	"github.com/tikv/pd/server/tso"
 	"github.com/tikv/pd/server/versioninfo"
 	"github.com/urfave/negroni"
-	"go.etcd.io/etcd/clientv3"
-	"go.etcd.io/etcd/embed"
-	"go.etcd.io/etcd/pkg/types"
 	"go.uber.org/zap"
 	"google.golang.org/grpc"
 )

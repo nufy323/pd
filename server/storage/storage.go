@@ -18,13 +18,13 @@ import (
 	"context"
 	"sync/atomic"
 
+	"github.com/ozonru/etcd/v3/clientv3"
 	"github.com/pingcap/kvproto/pkg/metapb"
 	"github.com/tikv/pd/pkg/syncutil"
 	"github.com/tikv/pd/server/core"
 	"github.com/tikv/pd/server/encryptionkm"
 	"github.com/tikv/pd/server/storage/endpoint"
 	"github.com/tikv/pd/server/storage/kv"
-	"go.etcd.io/etcd/clientv3"
 )
 
 // Storage is the interface for the backend storage of the PD.

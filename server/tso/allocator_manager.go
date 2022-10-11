@@ -17,7 +17,6 @@ package tso
 import (
 	"context"
 	"fmt"
-	"github.com/pingcap/errors"
 	"math"
 	"path"
 	"strconv"
@@ -25,6 +24,9 @@ import (
 	"sync"
 	"time"
 
+	"github.com/pingcap/errors"
+
+	"github.com/ozonru/etcd/v3/clientv3"
 	"github.com/pingcap/failpoint"
 	"github.com/pingcap/kvproto/pkg/pdpb"
 	"github.com/pingcap/log"
@@ -37,7 +39,6 @@ import (
 	"github.com/tikv/pd/server/election"
 	"github.com/tikv/pd/server/member"
 	"github.com/tikv/pd/server/storage/kv"
-	"go.etcd.io/etcd/clientv3"
 	"go.uber.org/zap"
 	"google.golang.org/grpc"
 )

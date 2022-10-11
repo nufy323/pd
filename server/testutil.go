@@ -22,6 +22,7 @@ import (
 	"sync"
 	"time"
 
+	"github.com/ozonru/etcd/v3/embed"
 	"github.com/pingcap/log"
 	"github.com/stretchr/testify/require"
 	"github.com/tikv/pd/pkg/assertutil"
@@ -29,7 +30,6 @@ import (
 	"github.com/tikv/pd/pkg/testutil"
 	"github.com/tikv/pd/pkg/typeutil"
 	"github.com/tikv/pd/server/config"
-	"go.etcd.io/etcd/embed"
 
 	// Register schedulers
 	_ "github.com/tikv/pd/server/schedulers"

@@ -26,6 +26,8 @@ import (
 	"sync/atomic"
 	"time"
 
+	"github.com/ozonru/etcd/v3/clientv3"
+	"github.com/ozonru/etcd/v3/embed"
 	"github.com/pingcap/errors"
 	"github.com/pingcap/kvproto/pkg/pdpb"
 	"github.com/pingcap/log"
@@ -34,8 +36,6 @@ import (
 	"github.com/tikv/pd/server/config"
 	"github.com/tikv/pd/server/election"
 	"github.com/tikv/pd/server/storage/kv"
-	"go.etcd.io/etcd/clientv3"
-	"go.etcd.io/etcd/embed"
 	"go.uber.org/zap"
 )
 

@@ -20,8 +20,8 @@ import (
 	"regexp"
 	"strings"
 
+	"github.com/ozonru/etcd/v3/clientv3"
 	"github.com/tikv/pd/pkg/etcdutil"
-	"go.etcd.io/etcd/clientv3"
 )
 
 // Strategy within a HTTP request provides rules and resources to help make decision for auto scaling.

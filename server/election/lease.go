@@ -19,11 +19,11 @@ import (
 	"sync/atomic"
 	"time"
 
+	"github.com/ozonru/etcd/v3/clientv3"
 	"github.com/pingcap/log"
 	"github.com/tikv/pd/pkg/errs"
 	"github.com/tikv/pd/pkg/etcdutil"
 	"github.com/tikv/pd/pkg/typeutil"
-	"go.etcd.io/etcd/clientv3"
 	"go.uber.org/zap"
 )
 

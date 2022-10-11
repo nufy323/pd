@@ -26,6 +26,7 @@ import (
 
 	"github.com/coreos/go-semver/semver"
 	"github.com/gogo/protobuf/proto"
+	"github.com/ozonru/etcd/v3/clientv3"
 	"github.com/pingcap/errors"
 	"github.com/pingcap/failpoint"
 	"github.com/pingcap/kvproto/pkg/metapb"
@@ -56,7 +57,6 @@ import (
 	"github.com/tikv/pd/server/storage"
 	"github.com/tikv/pd/server/storage/endpoint"
 	"github.com/tikv/pd/server/versioninfo"
-	"go.etcd.io/etcd/clientv3"
 	"go.uber.org/zap"
 )
 

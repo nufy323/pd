@@ -21,9 +21,9 @@ import (
 	"strings"
 	"time"
 
+	"github.com/ozonru/etcd/v3/clientv3"
+	"github.com/ozonru/etcd/v3/pkg/transport"
 	"github.com/tikv/pd/tools/pd-backup/pdbackup"
-	"go.etcd.io/etcd/clientv3"
-	"go.etcd.io/etcd/pkg/transport"
 )
 
 var (

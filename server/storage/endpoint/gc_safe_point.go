@@ -20,10 +20,10 @@ import (
 	"strconv"
 	"time"
 
+	"github.com/ozonru/etcd/v3/clientv3"
 	"github.com/pingcap/errors"
 	"github.com/pingcap/log"
 	"github.com/tikv/pd/pkg/errs"
-	"go.etcd.io/etcd/clientv3"
 )
 
 // ServiceSafePoint is the safepoint for a specific service
